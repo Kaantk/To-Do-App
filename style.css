@@ -1,0 +1,140 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    list-style-type: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    background-color: #06283D;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    background-color: #fff;
+    padding: 1em;
+    border-radius: 1em;
+    width: 40%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: rgba(121, 121, 121, 0.438) 0px 7px 29px 0px;
+}
+
+h1 {
+    margin-bottom: 0.5em;
+    color: #123d52;
+}
+
+.task-add {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.task-add input {
+    border: 1px solid gray;
+    padding: 0.75em 0.5em;
+    border-radius: 0.5em;
+    margin-right: 1.5em;
+    width: 70%;
+    outline: none;
+    font-weight: 600;
+    height: 45px;
+}
+
+.task-add button:hover, .task-button button:hover {
+    background-color: #06283D;
+    color : #fff;
+}
+
+.task-add img {
+    width: 30px;
+}
+
+.navbar {
+    margin-top: 1em;
+}
+
+.navbar button {
+    border: none;
+    outline: none;
+    background-color: #fff;
+    cursor: pointer;
+}
+
+.task-add button, .task-list button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #dff6ff;
+    border: none;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    transition: 0.9s ease;
+    outline: none;
+}
+
+.navbar button:nth-child(1) {
+    margin-right: 3em;
+}
+
+.navbar .navbar-scroll {
+    width: 80px;
+    height: 2px;
+    background-color: #06283D;
+    border-radius: 1em;
+    transition: all 0.5s ease;
+}
+
+.navbar .navbar-scroll-change {
+    width: 110px;
+    margin-left: 130px;
+}
+
+.task-list {
+    margin-top: 1.5em;
+    width: 95%;
+    max-height: 500px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    padding-right: 0.5em;
+}
+
+.task {
+    width: 100%;
+    margin-bottom : 0.5em;
+}
+
+.task-list .task, .task .task-button {
+    display: flex;
+    align-items: center;
+}
+
+.task .task-description {
+    font-size: 14px;
+}
+
+.task .task-button {
+    margin-left: auto;
+    justify-content: space-between;
+}
+
+.task .task-button button {
+    width: 30px;
+    height: 30px;
+    margin-left: 0.75em;
+}
+
+.error-message {
+    color: red;
+    margin-top: 0.25em;
+}
