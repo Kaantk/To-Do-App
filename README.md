@@ -1,5 +1,5 @@
 # To Do App
-You can add, complete or delete tasks.
+**You can add, complete or delete tasks.**
 
 ## Some images of the project : 
 
